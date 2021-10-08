@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <style>
+         .container{
+            max-width: 1170px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:  center;
+            align-items: center;
+            margin: auto;
+            padding: 50px 0px;
+        }
+            .content {
+                 margin: 10px;
+                 width: 21%;
+            }
+            .content img{
+                width: 100%;
+            }
+            *{
+            margin: 0;
+            padding: 0;
+        }
+       nav{
+           display: flex;
+           justify-content: space-between;
+           height: 80px;
+           background: rgb(100, 99, 99);
+       }
+       h1 {
+            font-size: 30px;
+            color: #fafafa;
+            padding: 24px 56px;
+}
+       ul {
+            list-style: none;
+            padding: 28px 42px;
+}
+       li{
+           display: inline-block;
+       }
+       a{
+           text-decoration: none;
+           font-size: 19px;
+           padding: 20px 0px;
+           margin: 0px 5px;
+           color: #fafafa;
+       }
+       i{
+           font-size: 20px;
+           color: black;
+       }
+       #box{
+           display: none;
+       }
+       label{
+           padding: 25px 5px;
+           margin: 0px 10px;
+           display: none;
+           color: black;
+       }
+      
+       #remove{
+           display: none;
+       }
+
+
+       @media screen and (max-width: 1070px) {
+           a{
+               font-size: 12px;
+           }
+       }
+       @media screen and (max-width: 870px) {
+           label{
+               display: block;
+           }
+           ul {
+                position: absolute;
+                top: 12%;
+                left: -150%;
+                background: gray;
+                width: 100%;
+                height: 50vh;
+                padding: 0;
+                transition: all 1s;
+            }       
+      
+       li{
+           display: block;
+           text-align: center;
+          
+           margin: 10px 0px;
+       }
+       h1 {
+            font-size: 20px;
+            color: #fafafa;
+            padding: 28px 10px;
+}
+       #box:checked ~ ul{
+           left: 0%;
+       }
+       #box:checked ~ label #acess{
+           display: none;
+       }
+       #box:checked ~ label #remove{
+           display: block;
+       }
+       }
+
+            @media screen and (max-width: 1000px){
+                .content{
+                    width: 46%;
+                   
+                }
+                
+            }
+            @media screen and (max-width: 515px){
+                .content{
+                    width: 100%;
+                   
+                }
+                
+            }
+         
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>SAIFUL</h1>
+        <input id="box"  type="checkbox">
+        
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">ITEAMS</a></li>
+            <li><a href="">CONTENT</a></li>
+            <li><a href="">PRODUCT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">GALLARY</a></li>
+            
+        </ul>
+        <label for="box"><i id="acess" class="fas fa-bars"></i>
+            <i class="fas fa-times" id="remove"></i>
+        </label>
+
+    </nav>
+   
+    <div class="container">
+        <div class="content">
+            <img src="one.jpg" alt="">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni consequatur, assumenda blanditiis provident iste at officia officiis expedita explicabo maxime eligendi debitis incidunt laborum possimus ipsum reprehenderit, aliquam nisi facilis modi rem. Ipsa, pariatur facilis.
+        </div>
+        <div class="content">
+            <img src="tow.jpg" alt="">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni consequatur, assumenda blanditiis provident iste at officia officiis expedita explicabo maxime eligendi debitis incidunt laborum possimus ipsum reprehenderit, aliquam nisi facilis modi rem. Ipsa, pariatur facilis.
+        </div>
+        <div class="content">
+            <img src="three.jpg" alt="">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni consequatur, assumenda blanditiis provident iste at officia officiis expedita explicabo maxime eligendi debitis incidunt laborum possimus ipsum reprehenderit, aliquam nisi facilis modi rem. Ipsa, pariatur facilis.
+        </div>
+        <div class="content">
+            <img src="four.jpg" alt="">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni consequatur, assumenda blanditiis provident iste at officia officiis expedita explicabo maxime eligendi debitis incidunt laborum possimus ipsum reprehenderit, aliquam nisi facilis modi rem. Ipsa, pariatur facilis.
+        </div>
+    </div>
+ 
+</body>
+</html>
